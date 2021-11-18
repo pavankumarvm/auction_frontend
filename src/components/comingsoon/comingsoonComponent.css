@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  font-family: Core Sans G;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 51px;
+  text-align: center;
+  background-color: brown;
+  height: 100%;
+}
+
+.comingSoon-img {
+  width: 500px;
+  height: 450px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.coming {
+  color: #7bb1bc;
+}
+
+.soon {
+  color: #f9be00;
+}
