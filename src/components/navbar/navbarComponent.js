@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../images/auction_logo_white.webp";
 import "./navbarComponent.css";
 
 class Navigation extends React.Component {
@@ -6,14 +7,33 @@ class Navigation extends React.Component {
   //   super(props);
   // }
 
+  componentDidMount() {
+    var url = window.location.href;
+    var page_id = url.split("/")[3];
+    console.log(page_id);
+    if (page_id != "") {
+      var ele = document.getElementById(page_id);
+      ele.classList.add("active");
+    } else {
+      var ele = document.getElementById("home");
+      ele.classList.add("active");
+    }
+  }
+
   // @Override method
   render = () => {
     return (
       <div className="navigation">
-        <nav className="navbar navbar-expand-lg navbar-dark p-2">
+        <nav className="navbar navbar-expand-lg navbar-dark p-4">
           <div className="container-fluid">
             <a className="navbar-brand px-5" href="/">
-              Auctions
+              <img
+                src={logo}
+                alt="Image"
+                class="img-fluid"
+                data-pagespeed-url-hash="537996854"
+                onLoad="pagespeed.CriticalImages.checkImageForCriticality(this);"
+              />
             </a>
             <button
               className="navbar-toggler"
@@ -31,17 +51,22 @@ class Navigation extends React.Component {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item px-3">
-                  <a className="nav-link active" aria-current="page" href="/">
+                <li className="nav-item px-2">
+                  <a className="nav-link" href="/home" id="home">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item px-2">
+                  <a className="nav-link" href="/buy" id="buy">
                     Buy
                   </a>
                 </li>
-                <li className="nav-item px-3">
-                  <a className="nav-link" href="/">
+                <li className="nav-item px-2">
+                  <a className="nav-link" href="/sell" id="sell">
                     Sell
                   </a>
                 </li>
-                <li className="nav-item px-3 dropdown">
+                <li className="nav-item px-2 dropdown">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -57,12 +82,12 @@ class Navigation extends React.Component {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <a className="dropdown-item" href="/buy">
                         Buy Items
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <a className="dropdown-item" href="/sell">
                         Sell Items
                       </a>
                     </li>
@@ -70,24 +95,28 @@ class Navigation extends React.Component {
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <a className="dropdown-item" href="/bid">
                         Bid Items
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item px-3">
-                  <a className="nav-link disabled" href="/wishlist">
+                <li className="nav-item px-2">
+                  <a
+                    className="nav-link disabled"
+                    href="/wishlist"
+                    id="wishlist"
+                  >
                     Wishlist
                   </a>
                 </li>
-                <li className="nav-item px-3">
-                  <a className="nav-link" href="/about">
+                <li className="nav-item px-2">
+                  <a className="nav-link" href="/about" id="about">
                     About
                   </a>
                 </li>
-                <li className="nav-item px-3">
-                  <a className="nav-link" href="/contact">
+                <li className="nav-item px-2">
+                  <a className="nav-link" href="/contact" id="contact">
                     Contact
                   </a>
                 </li>

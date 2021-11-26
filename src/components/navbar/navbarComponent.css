@@ -5,3 +5,20 @@
   width: 100%;
   background: transparent;
 }
+
+.nav-link {
+  line-height: 1em;
+  display: inline-block;
+  position: relative;
+}
+.navbar-nav > .nav-item > .nav-link.active:after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: -2px;
+  background: #fff;
+  opacity: 1;
+  visibility: visible;
+}
