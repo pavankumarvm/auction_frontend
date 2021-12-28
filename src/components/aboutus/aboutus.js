@@ -8,27 +8,26 @@ import hero from "../../images/hero.webp";
 
 function AboutUs() {
   return (
-    <div class="site-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
+    <div className="site-section">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-7">
             <img
               src={hero}
               alt="Image"
-              class="img-fluid"
+              className="img-fluid"
               data-pagespeed-url-hash="1089139631"
-              onLoad="pagespeed.CriticalImages.checkImageForCriticality(this);"
             />
           </div>
-          <div class="col-lg-5 pl-lg-5">
-            <div class="mb-5">
-              <span class="caption">About?</span>
-              <h2 class="text-black">
+          <div className="col-lg-5 pl-lg-5">
+            <div className="mb-5">
+              <span className="caption">About?</span>
+              <h2 className="text-black">
                 About <strong>Us</strong>
               </h2>
             </div>
-            <div class="d-flex feature-icon mb-3">
-              <span class="wrap-icon mr-2">
+            <div className="d-flex feature-icon mb-3">
+              <span className="wrap-icon mr-2">
                 <FontAwesomeIcon icon={faPaperPlane} />
               </span>
               <div>
@@ -39,8 +38,8 @@ function AboutUs() {
                 </p>
               </div>
             </div>
-            <div class="d-flex feature-icon mb-3">
-              <span class="wrap-icon mr-2">
+            <div className="d-flex feature-icon mb-3">
+              <span className="wrap-icon mr-2">
                 <FontAwesomeIcon icon={faSmile} />
               </span>
               <div>
@@ -51,8 +50,8 @@ function AboutUs() {
                 </p>
               </div>
             </div>
-            <div class="d-flex feature-icon mb-3">
-              <span class="wrap-icon mr-2">
+            <div className="d-flex feature-icon mb-3">
+              <span className="wrap-icon mr-2">
                 <FontAwesomeIcon icon={faClock} />
               </span>
               <div>

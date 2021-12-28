@@ -14,6 +14,9 @@ import HomePage from "./pages/home/home";
 import BuyPage from "./pages/buy/buy";
 import LoginPage from "./pages/login/login";
 import RegisterPage from "./pages/register/register";
+import Footer from "./components/footer/footer";
+import ContactPage from "./pages/contact/contact";
+import AboutPage from "./pages/about/about";
 
 ReactDOM.render(
   <Router>
@@ -22,12 +25,14 @@ ReactDOM.render(
       <Route path="/" element={<HomePage />} />
       <Route path="/home" element={<HomePage />} />
       <Route path="/buy" element={<BuyPage />} />
+      <Route path="/sell" element={<ComingSoon />} />
       <Route path="/wishlist" element={<ComingSoon />} />
-      <Route path="/about" element={<ComingSoon />} />
-      <Route path="/contact" element={<ComingSoon />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/contact" element={<ContactPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
     </Routes>
+    <Footer />
   </Router>,
   document.getElementById("root")
 );

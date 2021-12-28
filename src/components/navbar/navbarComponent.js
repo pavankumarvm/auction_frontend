@@ -30,9 +30,8 @@ class Navigation extends React.Component {
               <img
                 src={logo}
                 alt="Image"
-                class="img-fluid"
+                className="img-fluid"
                 data-pagespeed-url-hash="537996854"
-                onLoad="pagespeed.CriticalImages.checkImageForCriticality(this);"
               />
             </a>
             <button
@@ -123,15 +122,15 @@ class Navigation extends React.Component {
               </ul>
               <div className="d-inline-flex">
                 <div className="nav-item">
-                  <a className="nav-link" href="/login">
-                    <button type="button" class="btn btn-light px-4">
+                  <a className="nav-link" href="/login" id="login">
+                    <button type="button" className="btn btn-light px-4">
                       Login
                     </button>
                   </a>
                 </div>
                 <div className="nav-item">
-                  <a className="nav-link" href="/register">
-                    <button type="button" class="btn btn-light px-3">
+                  <a className="nav-link" href="/register" id="register">
+                    <button type="button" className="btn btn-light px-3">
                       Register
                     </button>
                   </a>

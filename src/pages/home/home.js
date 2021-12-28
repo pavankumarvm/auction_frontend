@@ -1,9 +1,7 @@
 import { Component } from "react";
 import AboutUs from "../../components/aboutus/aboutus";
-import HomeCarousel from "../../components/carousel/carouselComponent";
 import CreateAccount from "../../components/createAccount/createAccount";
 import Current from "../../components/current/current";
-import Footer from "../../components/footer/footer";
 import HowItWorks from "../../components/howitworks/howitworks";
 import Testimonials from "../../components/testimonials/testimonials";
 import hero from "../../images/hero.webp";
@@ -13,13 +11,13 @@ class HomePage extends Component {
     return (
       <div className="home">
         <div
-          class="intro-section"
+          className="intro-section"
           style={{ backgroundImage: "url(" + hero + ")" }}
         >
-          <div class="container">
-            <div class="row align-items-center justify-content-center">
+          <div className="container">
+            <div className="row align-items-center justify-content-center">
               <div
-                class="col-md-7 mx-auto text-center aos-init aos-animate"
+                className="col-md-7 mx-auto text-center aos-init aos-animate"
                 data-aos="fade-up"
               >
                 <h1>The Best Place to Buy and Sell</h1>
@@ -28,7 +26,7 @@ class HomePage extends Component {
                   nihil.
                 </p>
                 <p>
-                  <a href="#" class="btn btn-primary">
+                  <a href="#" className="btn btn-primary">
                     Register
                   </a>
                 </p>
@@ -41,7 +39,6 @@ class HomePage extends Component {
         <AboutUs />
         <Testimonials />
         <CreateAccount />
-        <Footer />
       </div>
     );
   }
