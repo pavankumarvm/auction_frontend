@@ -11,8 +11,8 @@ class Navigation extends React.Component {
     var url = window.location.href;
     var page_id = url.split("/")[3];
     console.log(page_id);
-    if (page_id != "") {
-      var ele = document.getElementById(page_id);
+    var ele = document.getElementById(page_id);
+    if (ele) {
       ele.classList.add("active");
     } else {
       var ele = document.getElementById("home");

@@ -15,7 +15,7 @@ function Testimonials() {
             </h2>
           </div>
         </div>
-        {/* <div className="owl-slide owl-carousel owl-testimonial owl-loaded owl-drag">
+        <div className="owl-slide owl-carousel owl-testimonial owl-loaded owl-drag">
           <div className="owl-stage-outer">
             <div
               className="owl-stage"
@@ -36,7 +36,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="4219964000"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -65,7 +64,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3925464079"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -94,7 +92,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="219496625"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -123,7 +120,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3630964158"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -152,7 +148,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3925464079"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -181,7 +176,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="219496625"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -210,7 +204,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="4219964000"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -239,7 +232,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3925464079"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -268,7 +260,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="219496625"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -297,7 +288,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3630964158"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -326,7 +316,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3925464079"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -355,7 +344,6 @@ function Testimonials() {
                       alt="Image"
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="219496625"
-                      
                     />
                     <div>
                       <h3>Allison Holmes</h3>
@@ -394,7 +382,7 @@ function Testimonials() {
               <span></span>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

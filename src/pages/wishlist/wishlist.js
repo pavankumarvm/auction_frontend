@@ -1,5 +1,9 @@
+import { Component } from "react";
+
 class WishList extends Component {
   render() {
-    <div className="wishlist"></div>;
+    return <div className="wishlist"></div>;
   }
 }
+
+export default WishList;
