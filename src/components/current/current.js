@@ -8,7 +8,7 @@ class Current extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      products: ["a", "b", "c"],
+      products: [],
       // isloading: true,
     };
   }

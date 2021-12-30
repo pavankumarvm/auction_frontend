@@ -1,8 +1,32 @@
 import hero from "../../images/hero.webp";
 import { Component } from "react";
 import Category from "../../components/category/category";
+import getProducts from "../../services/product.service";
+import Product from "../../components/product/product";
 
 class BuyPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      products: [],
+      // isloading: true,
+    };
+  }
+
+  componentDidMount() {
+    getProducts()
+      .then((data) => {
+        console.log("Received Products:");
+        console.log(data);
+        this.setState({
+          products: [...data],
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
   render() {
     return (
       <div className="buy">
@@ -186,240 +210,9 @@ class BuyPage extends Component {
               </div>
               <div class="col-md-9">
                 <div class="row auctions-entry">
-                  <div class="col-6 col-md-4 col-lg-4">
-                    <div class="item">
-                      <div>
-                        <strong class="price">$95</strong>
-                        <a href="item-single.html">
-                          <img
-                            src="images/xproduct_1.jpg.pagespeed.ic.jv58llKnOW.webp"
-                            alt="Image"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="p-4">
-                        <h3>
-                          <a href="item-single.html">Pinky Shoes</a>
-                        </h3>
-                        <div class="d-flex mb-2">
-                          <span>Shoes</span>
-                          <span class="ml-auto">4 bids</span>
-                        </div>
-                        <a href="item-single.html" class="btn btn-bid">
-                          Submit a Bid
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-4">
-                    <div class="item">
-                      <div>
-                        <strong class="price">$30</strong>
-                        <a href="item-single.html">
-                          <img
-                            src="images/xproduct_2.jpg.pagespeed.ic.zYGt4XwKL2.webp"
-                            alt="Image"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="p-4">
-                        <h3>
-                          <a href="item-single.html">Eye Glass Eye Protector</a>
-                        </h3>
-                        <div class="d-flex mb-2">
-                          <span>Eye Glasses</span>
-                          <span class="ml-auto">10 bids</span>
-                        </div>
-                        <a href="item-single.html" class="btn btn-bid">
-                          Submit a Bid
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-4">
-                    <div class="item">
-                      <div>
-                        <strong class="price">$199</strong>
-                        <a href="item-single.html">
-                          <img
-                            src="images/xproduct_3.jpg.pagespeed.ic.2g0ICPmV6O.webp"
-                            alt="Image"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="p-4">
-                        <h3>
-                          <a href="item-single.html">Black Leather Jacket</a>
-                        </h3>
-                        <div class="d-flex mb-2">
-                          <span>Clothing</span>
-                          <span class="ml-auto">24 bids</span>
-                        </div>
-                        <a href="item-single.html" class="btn btn-bid">
-                          Submit a Bid
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-4">
-                    <div class="item">
-                      <div>
-                        <strong class="price">$1,999</strong>
-                        <a href="item-single.html">
-                          <img
-                            src="images/xproduct_4.jpg.pagespeed.ic.nXVsO01FP9.webp"
-                            alt="Image"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="p-4">
-                        <h3>
-                          <a href="item-single.html">MacBook 15-Inch Laptop</a>
-                        </h3>
-                        <div class="d-flex mb-2">
-                          <span>Clothing</span>
-                          <span class="ml-auto">224 bids</span>
-                        </div>
-                        <a href="item-single.html" class="btn btn-bid">
-                          Submit a Bid
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-4">
-                    <div class="item">
-                      <div>
-                        <strong class="price">$777</strong>
-                        <a href="item-single.html">
-                          <img
-                            src="images/xproduct_5.jpg.pagespeed.ic.96U3mkydkB.webp"
-                            alt="Image"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="p-4">
-                        <h3>
-                          <a href="item-single.html">iPad</a>
-                        </h3>
-                        <div class="d-flex mb-2">
-                          <span>Electronics</span>
-                          <span class="ml-auto">11 bids</span>
-                        </div>
-                        <a href="item-single.html" class="btn btn-bid">
-                          Submit a Bid
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-4">
-                    <div class="item">
-                      <div>
-                        <strong class="price">$78</strong>
-                        <a href="item-single.html">
-                          <img
-                            src="images/xproduct_6.jpg.pagespeed.ic.o7nMT9VPXJ.webp"
-                            alt="Image"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="p-4">
-                        <h3>
-                          <a href="item-single.html">Shoe Sneakers</a>
-                        </h3>
-                        <div class="d-flex mb-2">
-                          <span>Shoes</span>
-                          <span class="ml-auto">4 bids</span>
-                        </div>
-                        <a href="item-single.html" class="btn btn-bid">
-                          Submit a Bid
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-4">
-                    <div class="item">
-                      <div>
-                        <strong class="price">$1,999</strong>
-                        <a href="item-single.html">
-                          <img
-                            src="images/xproduct_7.jpg.pagespeed.ic.k1dM1LPDeN.webp"
-                            alt="Image"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="p-4">
-                        <h3>
-                          <a href="item-single.html">iMac</a>
-                        </h3>
-                        <div class="d-flex mb-2">
-                          <span>Electronics</span>
-                          <span class="ml-auto">293 bids</span>
-                        </div>
-                        <a href="item-single.html" class="btn btn-bid">
-                          Submit a Bid
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-4">
-                    <div class="item">
-                      <div>
-                        <strong class="price">$450</strong>
-                        <a href="item-single.html">
-                          <img
-                            src="images/xproduct_8.jpg.pagespeed.ic._zi5TVQkpp.webp"
-                            alt="Image"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="p-4">
-                        <h3>
-                          <a href="item-single.html">iWatch</a>
-                        </h3>
-                        <div class="d-flex mb-2">
-                          <span>Electronics</span>
-                          <span class="ml-auto">123 bids</span>
-                        </div>
-                        <a href="item-single.html" class="btn btn-bid">
-                          Submit a Bid
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-4">
-                    <div class="item">
-                      <div>
-                        <strong class="price">$30</strong>
-                        <a href="item-single.html">
-                          <img
-                            src="images/xproduct_2.jpg.pagespeed.ic.zYGt4XwKL2.webp"
-                            alt="Image"
-                            class="img-fluid"
-                          />
-                        </a>
-                      </div>
-                      <div class="p-4">
-                        <h3>
-                          <a href="item-single.html">Eye Glass Eye Protector</a>
-                        </h3>
-                        <div class="d-flex mb-2">
-                          <span>Eye Glasses</span>
-                          <span class="ml-auto">10 bids</span>
-                        </div>
-                        <a href="item-single.html" class="btn btn-bid">
-                          Submit a Bid
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                  {this.state.products.map(function (item, index) {
+                    return <Product product={item} key={index}></Product>;
+                  })}
                 </div>
               </div>
             </div>
