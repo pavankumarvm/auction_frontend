@@ -1,6 +1,6 @@
 const localUrl = "http://localhost:8000/api";
 
-const liveUrl = "";
+const liveUrl = "https://virtualauction-api.herokuapp.com/";
 
 const apiUrl = localUrl;
 
