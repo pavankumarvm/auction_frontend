@@ -1,5 +1,6 @@
 import hero from "../../images/hero.webp";
 import { Component } from "react";
+import Category from "../../components/category/category";
 
 class BuyPage extends Component {
   render() {
@@ -35,33 +36,7 @@ class BuyPage extends Component {
               <div class="col-md-3">
                 <div class="side-box mb-5">
                   <h3>Categories</h3>
-                  <ul class="list-unstyled auction-categories">
-                    <li>
-                      <a href="#">
-                        Shoes <span>2109</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Electronics <span>102</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Clothing <span>392</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Watches <span>291</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Accessories <span>391</span>
-                      </a>
-                    </li>
-                  </ul>
+                  <Category />
                 </div>
                 <div class="side-box">
                   <h3>Recent Bidders</h3>
