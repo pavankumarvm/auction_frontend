@@ -1,7 +1,7 @@
 import axios from "axios";
-import { productsUrl } from "../urls";
+import { productsUrl, getProductUrl } from "../urls";
 
-let getProducts = async () => {
+export const getProducts = async () => {
   var products = [];
   await axios
     .get(productsUrl)
@@ -16,4 +16,18 @@ let getProducts = async () => {
   return products;
 };
 
-export default getProducts;
+export const getProduct = async (id) => {
+  console.log("Requesting product... : " + id);
+  var product = {};
+  await axios
+    .get(getProductUrl + id)
+    .then((res) => {
+      product = res.data;
+      console.log(product);
+    })
+    .catch((err) => {
+      console.log("Something went wrong" + err);
+    });
+
+  return product;
+};

@@ -1,7 +1,6 @@
-import { extend } from "jquery";
 import { Component } from "react";
 
-import getProducts from "../../services/product.service";
+import { getProducts } from "../../services/product.service";
 import Product from "../product/product";
 
 class Current extends Component {

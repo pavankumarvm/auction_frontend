@@ -23,7 +23,7 @@ class RegisterPage extends Component {
                   nihil.
                 </p>
                 <p>
-                  <a href="#" className="btn btn-primary">
+                  <a href="/" className="btn btn-primary">
                     Explore Now
                   </a>
                 </p>

@@ -9,7 +9,7 @@ function Footer() {
             <p className="mb-4">
               <img
                 src={logo}
-                alt="Image"
+                alt=""
                 className="img-fluid"
                 data-pagespeed-url-hash="3368299270"
               />
@@ -19,7 +19,7 @@ function Footer() {
               nemo minima qui dolor, iusto iure.
             </p>
             <p>
-              <a href="#">Learn More</a>
+              <a href="/">Learn More</a>
             </p>
           </div>
           <div className="col-lg-3">
@@ -28,19 +28,19 @@ function Footer() {
             </h3>
             <ul className="list-unstyled">
               <li>
-                <a href="#">Register</a>
+                <a href="/">Register</a>
               </li>
               <li>
-                <a href="#">Login</a>
+                <a href="/">Login</a>
               </li>
               <li>
-                <a href="#">Buy</a>
+                <a href="/">Buy</a>
               </li>
               <li>
-                <a href="#">Sell</a>
+                <a href="/">Sell</a>
               </li>
               <li>
-                <a href="#">Submit a bid</a>
+                <a href="/">Submit a bid</a>
               </li>
             </ul>
           </div>
@@ -50,19 +50,19 @@ function Footer() {
             </h3>
             <ul className="list-unstyled">
               <li>
-                <a href="#">Register</a>
+                <a href="/">Register</a>
               </li>
               <li>
-                <a href="#">Login</a>
+                <a href="/">Login</a>
               </li>
               <li>
-                <a href="#">Buy</a>
+                <a href="/">Buy</a>
               </li>
               <li>
-                <a href="#">Sell</a>
+                <a href="/">Sell</a>
               </li>
               <li>
-                <a href="#">Submit a bid</a>
+                <a href="/">Submit a bid</a>
               </li>
             </ul>
           </div>
@@ -72,19 +72,19 @@ function Footer() {
             </h3>
             <ul className="list-unstyled">
               <li>
-                <a href="#">Help Center</a>
+                <a href="/">Help Center</a>
               </li>
               <li>
-                <a href="#">Support Community</a>
+                <a href="/">Support Community</a>
               </li>
               <li>
-                <a href="#">Press</a>
+                <a href="/">Press</a>
               </li>
               <li>
-                <a href="#">Share Your Story</a>
+                <a href="/">Share Your Story</a>
               </li>
               <li>
-                <a href="#">Our Supporters</a>
+                <a href="/">Our Supporters</a>
               </li>
             </ul>
           </div>

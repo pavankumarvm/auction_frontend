@@ -7,7 +7,7 @@ function CreateAccount() {
             <h2 className="text-black mb-4">
               Create an account and start Buy, Bid or Sell Now!
             </h2>
-            <a href="#" className="btn btn-primary">
+            <a href="/" className="btn btn-primary">
               Register
             </a>
           </div>

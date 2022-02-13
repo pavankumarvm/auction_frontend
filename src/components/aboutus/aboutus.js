@@ -14,7 +14,7 @@ function AboutUs() {
           <div className="col-lg-7">
             <img
               src={hero}
-              alt="Image"
+              alt=""
               className="img-fluid"
               data-pagespeed-url-hash="1089139631"
             />

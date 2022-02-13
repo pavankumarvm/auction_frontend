@@ -29,7 +29,7 @@ class Navigation extends React.Component {
             <a className="navbar-brand px-5" href="/">
               <img
                 src={logo}
-                alt="Image"
+                alt="Auction"
                 className="img-fluid"
                 data-pagespeed-url-hash="537996854"
               />
@@ -68,7 +68,7 @@ class Navigation extends React.Component {
                 <li className="nav-item px-2 dropdown">
                   <a
                     className="nav-link dropdown-toggle"
-                    href="#"
+                    href="/"
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"

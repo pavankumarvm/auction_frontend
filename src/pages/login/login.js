@@ -1,9 +1,30 @@
 import { Component } from "react";
 import Testimonials from "../../components/testimonials/testimonials";
 import hero from "../../images/hero.webp";
+import { login } from "../../services/auth.service";
 import "./login.css";
 
 class LoginPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: "",
+      password: "",
+    };
+  }
+
+  loginUser = () => {
+    console.log("Logging in");
+    login(this.username, this.password)
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  // override
   render() {
     return (
       <div className="login">
@@ -23,7 +44,7 @@ class LoginPage extends Component {
                   nihil.
                 </p>
                 <p>
-                  <a href="#" className="btn btn-primary">
+                  <a href="/" className="btn btn-primary">
                     Explore Now
                   </a>
                 </p>
@@ -40,10 +61,13 @@ class LoginPage extends Component {
                 </h2>
                 <div className="row">
                   <div className="col-md-12 form-group">
-                    <label for="useremail">Username/Email</label>
+                    <label for="useremail">Username</label>
                     <input
                       type="email"
                       id="useremail"
+                      name="username"
+                      value={this.state.username}
+                      onChange={(text) => this.setState({ username: text })}
                       className="form-control form-control-lg"
                     />
                   </div>
@@ -54,17 +78,21 @@ class LoginPage extends Component {
                     <input
                       type="password"
                       id="passlogin"
+                      name="password"
+                      value={this.state.password}
+                      onChange={(text) => this.setState({ password: text })}
                       className="form-control form-control-lg"
                     />
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-12">
-                    <input
+                    <button
                       type="submit"
                       value="Login"
                       className="btn btn-primary btn-lg px-5"
-                    />
+                      onClick={this.loginUser}
+                    ></button>
                   </div>
                 </div>
               </div>

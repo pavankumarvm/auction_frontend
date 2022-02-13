@@ -1,7 +1,7 @@
 import hero from "../../images/hero.webp";
 import { Component } from "react";
 import Category from "../../components/category/category";
-import getProducts from "../../services/product.service";
+import { getProducts } from "../../services/product.service";
 import Product from "../../components/product/product";
 
 class BuyPage extends Component {
@@ -46,7 +46,7 @@ class BuyPage extends Component {
                   nihil.
                 </p>
                 <p>
-                  <a href="#" className="btn btn-primary">
+                  <a href="/" className="btn btn-primary">
                     Register
                   </a>
                 </p>
@@ -71,7 +71,7 @@ class BuyPage extends Component {
                         <div class="d-flex align-items-center">
                           <img
                             src="images/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp"
-                            alt="Image"
+                            alt=""
                             class="mr-2"
                           />
                           <span>Jean Smith</span>
@@ -85,7 +85,7 @@ class BuyPage extends Component {
                         <div class="d-flex align-items-center">
                           <img
                             src="images/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp"
-                            alt="Image"
+                            alt=""
                             class="mr-2"
                           />
                           <span>Chris Wilson</span>
@@ -99,7 +99,7 @@ class BuyPage extends Component {
                         <div class="d-flex align-items-center">
                           <img
                             src="images/xperson_3.jpg.pagespeed.ic.JjUOiYZeEX.webp"
-                            alt="Image"
+                            alt=""
                             class="mr-2"
                           />
                           <span>Kyle Anderson</span>
@@ -113,7 +113,7 @@ class BuyPage extends Component {
                         <div class="d-flex align-items-center">
                           <img
                             src="images/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp"
-                            alt="Image"
+                            alt=""
                             class="mr-2"
                           />
                           <span>Jean Smith</span>
@@ -127,7 +127,7 @@ class BuyPage extends Component {
                         <div class="d-flex align-items-center">
                           <img
                             src="images/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp"
-                            alt="Image"
+                            alt=""
                             class="mr-2"
                           />
                           <span>Chris Wilson</span>
@@ -141,7 +141,7 @@ class BuyPage extends Component {
                         <div class="d-flex align-items-center">
                           <img
                             src="images/xperson_3.jpg.pagespeed.ic.JjUOiYZeEX.webp"
-                            alt="Image"
+                            alt=""
                             class="mr-2"
                           />
                           <span>Kyle Anderson</span>
@@ -155,7 +155,7 @@ class BuyPage extends Component {
                         <div class="d-flex align-items-center">
                           <img
                             src="images/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp"
-                            alt="Image"
+                            alt=""
                             class="mr-2"
                           />
                           <span>Jean Smith</span>
@@ -169,7 +169,7 @@ class BuyPage extends Component {
                         <div class="d-flex align-items-center">
                           <img
                             src="images/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp"
-                            alt="Image"
+                            alt=""
                             class="mr-2"
                           />
                           <span>Chris Wilson</span>
@@ -183,7 +183,7 @@ class BuyPage extends Component {
                         <div class="d-flex align-items-center">
                           <img
                             src="images/xperson_3.jpg.pagespeed.ic.JjUOiYZeEX.webp"
-                            alt="Image"
+                            alt=""
                             class="mr-2"
                           />
                           <span>Kyle Anderson</span>
@@ -197,7 +197,7 @@ class BuyPage extends Component {
                         <div class="d-flex align-items-center">
                           <img
                             src="images/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp"
-                            alt="Image"
+                            alt=""
                             class="mr-2"
                           />
                           <span>Chris Wilson</span>
@@ -222,13 +222,13 @@ class BuyPage extends Component {
               <div class="row">
                 <div class="col-lg">
                   <div class="custom-pagination">
-                    <a href="#" class="active">
+                    <a href="/" class="active">
                       1
                     </a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
+                    <a href="/">2</a>
+                    <a href="/">3</a>
+                    <a href="/">4</a>
+                    <a href="/">5</a>
                   </div>
                 </div>
               </div>

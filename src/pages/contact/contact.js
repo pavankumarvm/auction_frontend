@@ -23,7 +23,7 @@ class ContactPage extends Component {
                   nihil.
                 </p>
                 <p>
-                  <a href="#" className="btn btn-primary">
+                  <a href="/" className="btn btn-primary">
                     Explore Now
                   </a>
                 </p>
@@ -105,13 +105,13 @@ class ContactPage extends Component {
                   </p>
                   <p className="mb-0 font-weight-bold text-black">Phone</p>
                   <p className="mb-4">
-                    <a href="#">+1 232 3235 324</a>
+                    <a href="/">+1 232 3235 324</a>
                   </p>
                   <p className="mb-0 font-weight-bold text-black">
                     Email Address
                   </p>
                   <p className="mb-0">
-                    <a href="#">youremail@domain.com</a>
+                    <a href="/">youremail@domain.com</a>
                   </p>
                 </div>
               </div>

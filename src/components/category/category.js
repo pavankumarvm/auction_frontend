@@ -12,7 +12,7 @@ class Category extends Component {
   componentDidMount() {
     getCategories()
       .then((data) => {
-        console.log("Received Products:");
+        console.log("Received Categories:");
         console.log(data);
         this.setState({
           categories: [...data],
@@ -29,7 +29,7 @@ class Category extends Component {
         {this.state.categories.map((item, index) => {
           return (
             <li>
-              <a href="#">
+              <a href="/">
                 {item.name} <span>{item.product_count}</span>
               </a>
             </li>

@@ -23,7 +23,7 @@ class AboutPage extends Component {
                   nihil.
                 </p>
                 <p>
-                  <a href="#" className="btn btn-primary">
+                  <a href="/" className="btn btn-primary">
                     Explore Now
                   </a>
                 </p>
@@ -47,7 +47,7 @@ class AboutPage extends Component {
                 <div className="feature-1 border person text-center">
                   <img
                     src="images/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp"
-                    alt="Image"
+                    alt=""
                     className="img-fluid"
                   />
                   <div className="feature-1-content">
@@ -66,7 +66,7 @@ class AboutPage extends Component {
                 <div className="feature-1 border person text-center">
                   <img
                     src="images/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp"
-                    alt="Image"
+                    alt=""
                     className="img-fluid"
                     data-pagespeed-url-hash="3925464079"
                   />
@@ -86,7 +86,7 @@ class AboutPage extends Component {
                 <div className="feature-1 border person text-center">
                   <img
                     src="images/xperson_3.jpg.pagespeed.ic.JjUOiYZeEX.webp"
-                    alt="Image"
+                    alt=""
                     className="img-fluid"
                     data-pagespeed-url-hash="4219964000"
                   />
@@ -106,7 +106,7 @@ class AboutPage extends Component {
                 <div className="feature-1 border person text-center">
                   <img
                     src="images/xperson_4.jpg.pagespeed.ic.uLUMVk8CVd.webp"
-                    alt="Image"
+                    alt=""
                     className="img-fluid"
                     data-pagespeed-url-hash="219496625"
                   />
@@ -126,7 +126,7 @@ class AboutPage extends Component {
                 <div className="feature-1 border person text-center">
                   <img
                     src="images/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp"
-                    alt="Image"
+                    alt=""
                     className="img-fluid"
                     data-pagespeed-url-hash="3925464079"
                   />
@@ -146,7 +146,7 @@ class AboutPage extends Component {
                 <div className="feature-1 border person text-center">
                   <img
                     src="images/xperson_3.jpg.pagespeed.ic.JjUOiYZeEX.webp"
-                    alt="Image"
+                    alt=""
                     className="img-fluid"
                     data-pagespeed-url-hash="4219964000"
                   />

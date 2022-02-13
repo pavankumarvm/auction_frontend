@@ -33,7 +33,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_3.jpg.pagespeed.ic.JjUOiYZeEX.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="4219964000"
                     />
@@ -61,7 +61,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3925464079"
                     />
@@ -89,7 +89,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_4.jpg.pagespeed.ic.uLUMVk8CVd.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="219496625"
                     />
@@ -117,7 +117,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3630964158"
                     />
@@ -145,7 +145,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3925464079"
                     />
@@ -173,7 +173,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_4.jpg.pagespeed.ic.uLUMVk8CVd.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="219496625"
                     />
@@ -201,7 +201,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_3.jpg.pagespeed.ic.JjUOiYZeEX.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="4219964000"
                     />
@@ -229,7 +229,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3925464079"
                     />
@@ -257,7 +257,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_4.jpg.pagespeed.ic.uLUMVk8CVd.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="219496625"
                     />
@@ -285,7 +285,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3630964158"
                     />
@@ -313,7 +313,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="3925464079"
                     />
@@ -341,7 +341,7 @@ function Testimonials() {
                   <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                     <img
                       src="images/xperson_4.jpg.pagespeed.ic.uLUMVk8CVd.webp"
-                      alt="Image"
+                      alt=""
                       className="img-fluid mr-3"
                       data-pagespeed-url-hash="219496625"
                     />
