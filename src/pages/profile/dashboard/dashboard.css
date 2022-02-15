@@ -1,0 +1,23 @@
+.btn-edit {
+  background: orangered !important;
+  border: orangered !important;
+  padding: 10px 25px;
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-update {
+  padding: 10px 25px;
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  animation: fillBtn 3s;
+  animation-fill-mode: forwards;
+}

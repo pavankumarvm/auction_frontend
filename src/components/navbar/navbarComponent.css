@@ -3,14 +3,29 @@
   top: 0;
   z-index: 1000;
   width: 100%;
-  background: transparent;
+  background: #fff;
+  border-bottom: 1px solid orange;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.navbar-brand {
+  font-family: "Redressed", cursive;
+  color: orange !important;
+  font-size: xx-large;
+}
+
+.navbar-brand:hover {
+  color: orangered !important;
 }
 
 .nav-link {
   line-height: 1em;
   display: inline-block;
   position: relative;
+  color: black;
 }
+
 .navbar-nav > .nav-item > .nav-link.active:after {
   content: "";
   height: 2px;
@@ -18,7 +33,18 @@
   left: 8px;
   right: 8px;
   bottom: -2px;
-  background: #fff;
+  background: black;
   opacity: 1;
   visibility: visible;
+}
+
+.d-flex > .btn.btn-outline-success {
+  background-color: white;
+  border: 1px solid orange;
+  color: orange;
+}
+
+.d-flex > .nav-item > .nav-link > .btn.btn-success {
+  background-color: orange;
+  border: orange;
 }
