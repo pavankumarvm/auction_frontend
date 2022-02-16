@@ -12,7 +12,7 @@ import RegisterPage from "./pages/register/register";
 import ContactPage from "./pages/contact/contact";
 import AboutPage from "./pages/about/about";
 import ProductPage from "./pages/product/product.page";
-import SellPage from "./pages/sell/sell";
+import SellPage from "./pages/sell/sell.page";
 import ProfilePage from "./pages/profile/profile";
 import withSplashScreen from "./components/splashScreen/splashScreenComponent";
 
