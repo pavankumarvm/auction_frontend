@@ -19,7 +19,7 @@ function ProductPage() {
 
   useEffect(() => {
     getProduct("PPP")
-      .then((d: ProductModel) => {
+      .then((d) => {
         console.log("Received Product:");
         product = d;
         setLoading(false);
@@ -64,10 +64,10 @@ function ProductPage() {
               <div className="side-box mb-4">
                 <p>
                   Min Price:{" "}
-                  <strong className="text-black">${product.min_price}</strong>{" "}
+                  <strong className="text-black">${product.minPrice}</strong>{" "}
                   <br />
                   Number of Bids:{" "}
-                  <strong className="text-black">{product.bid_count}</strong>
+                  <strong className="text-black">{product.bidCount}</strong>
                 </p>
                 <form action="#">
                   <div className="mb-4">
@@ -93,7 +93,6 @@ function ProductPage() {
                   alt=""
                   className="img-fluid w-50 rounded-circle mb-4"
                   data-pagespeed-url-hash="4219964000"
-                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                 />
                 <h3 className="h5 text-black">Collen Winston</h3>
                 <span className="mb-3 d-block text-muted">Owner</span>
@@ -121,7 +120,6 @@ function ProductPage() {
                         alt=""
                         className="img-fluid mb-54"
                         data-pagespeed-url-hash="3615733728"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                       />
                     </div>
                     <div className="owl-item cloned" style={{ width: "693px" }}>
@@ -130,7 +128,6 @@ function ProductPage() {
                         alt=""
                         className="img-fluid mb-54"
                         data-pagespeed-url-hash="3615733728"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                       />
                     </div>
                     <div className="owl-item" style={{ width: "693px" }}>
@@ -139,7 +136,6 @@ function ProductPage() {
                         alt=""
                         className="img-fluid mb-54"
                         data-pagespeed-url-hash="3615733728"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                       />
                     </div>
                     <div className="owl-item active" style={{ width: "693px" }}>
@@ -148,7 +144,6 @@ function ProductPage() {
                         alt=""
                         className="img-fluid mb-54"
                         data-pagespeed-url-hash="3615733728"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                       />
                     </div>
                     <div className="owl-item" style={{ width: "693px" }}>
@@ -157,7 +152,6 @@ function ProductPage() {
                         alt=""
                         className="img-fluid mb-54"
                         data-pagespeed-url-hash="3615733728"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                       />
                     </div>
                     <div className="owl-item cloned" style={{ width: "693px" }}>
@@ -166,7 +160,6 @@ function ProductPage() {
                         alt=""
                         className="img-fluid mb-54"
                         data-pagespeed-url-hash="3615733728"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                       />
                     </div>
                     <div className="owl-item cloned" style={{ width: "693px" }}>
@@ -175,7 +168,6 @@ function ProductPage() {
                         alt=""
                         className="img-fluid mb-54"
                         data-pagespeed-url-hash="3615733728"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                       />
                     </div>
                   </div>
@@ -229,7 +221,6 @@ function ProductPage() {
                         alt=""
                         className="mr-2"
                         data-pagespeed-url-hash="3630964158"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                       />
                       <span>Jean Smith</span>
                     </div>
@@ -245,7 +236,6 @@ function ProductPage() {
                         alt=""
                         className="mr-2"
                         data-pagespeed-url-hash="3925464079"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                       />
                       <span>Chris Wilson</span>
                     </div>
@@ -261,7 +251,6 @@ function ProductPage() {
                         alt=""
                         className="mr-2"
                         data-pagespeed-url-hash="4219964000"
-                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                       />
                       <span>Kyle Anderson</span>
                     </div>

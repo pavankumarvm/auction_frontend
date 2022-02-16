@@ -1,92 +1,38 @@
 import { useEffect, useState } from "react";
-import avatar from "../../images/avatar.png";
 import "./sidebarComponent.css";
 
-function SideBar(props) {
-  const [activeName, setActiveName] = useState("dashboard");
+function SideBar() {
+  // const [activeName, setActiveName] = useState("editProfile");
   const [url, setUrl] = useState(window.location.href.split("/")[4]);
 
   useEffect(() => {
     var ele = document.getElementById(url);
     // console.log(ele);
     if (ele) {
-      setActiveName(url);
+      // setActiveName(url);
       ele.classList.add("active");
     } else {
-      setActiveName("dashboard");
-      ele = document.getElementById("dashboard");
-      ele.classList.add("active");
+      // setActiveName("editProfile");
+      ele = document.getElementById("editProfile");
+      ele!.classList.add("active");
     }
   }, [url]);
 
   return (
     <div className="sidebar">
-      <div
-        className="d-flex flex-column flex-shrink-0 p-3 bg-light"
-        style={{ width: "300px" }}
-      >
-        <div className="dropdown text-center">
-          <img
-            src={avatar}
-            alt="profile-pic"
-            className="img-circle"
-            style={{ height: 180 }}
-          />
-          <a
-            href="/profile/"
-            id="dropdownUser"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            className="d-flex align-items-center text-center mb-3 link-dark text-decoration-none dropdown-toggle"
-          >
-            <h3>Pavankumar Maurya</h3>
-          </a>
-          <ul
-            className="dropdown-menu text-small shadow"
-            aria-labelledby="dropdownUser"
-          >
-            <li>
-              <a className="dropdown-item" href="/profile/change_password">
-                Change Password
-              </a>
-            </li>
-            {/* <li>
-              <a className="dropdown-item" href="#">
-                Settings
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Profile
-              </a>
-            </li> */}
-            <li>
-              <hr className="dropdown-divider" />
-            </li>
-            <li>
-              <a className="dropdown-item" href="/logout">
-                Log Out
-              </a>
-            </li>
-          </ul>
-        </div>
-        <hr />
-        <ul className="nav nav-pills flex-column mb-auto">
-          <li>
+      <div className="d-flex flex-column flex-shrink-0">
+        <ul className="nav nav-pills flex-column mb-auto list-group">
+          <li className="list-group-item">
             <a
-              href="/profile/dashboard"
+              href="/profile/editProfile"
               className="nav-link link-dark"
-              id="dashboard"
+              id="editProfile"
             >
-              <i
-                className="fa fa-dashboard sidebar-icon"
-                aria-hidden="true"
-              ></i>
-              Dashboard
+              <i className="fa fa-edit sidebar-icon" aria-hidden="true"></i>
+              EditProfile
             </a>
           </li>
-          <li>
+          <li className="list-group-item">
             <a
               href="/profile/location"
               className="nav-link link-dark"
@@ -99,7 +45,7 @@ function SideBar(props) {
               Location
             </a>
           </li>
-          <li>
+          <li className="list-group-item">
             <a
               href="/profile/wishlist"
               className="nav-link link-dark"
@@ -109,17 +55,16 @@ function SideBar(props) {
               WishList
             </a>
           </li>
-          <li>
+          {/* <li className="list-group-item">
             <a
               href="/profile/orders"
-              className="nav-link link-dark"
-              id="orders"
+className="nav-link link-dark"              id="orders"
             >
               <i className="fa fa-list sidebar-icon" aria-hidden="true"></i>
               Orders
             </a>
-          </li>
-          <li>
+          </li> */}
+          <li className="list-group-item">
             <a
               href="/profile/products"
               className="nav-link link-dark"
@@ -129,7 +74,7 @@ function SideBar(props) {
               Products
             </a>
           </li>
-          <li>
+          <li className="list-group-item">
             <a
               href="/profile/wallet"
               className="nav-link link-dark"
@@ -142,7 +87,7 @@ function SideBar(props) {
               Wallet
             </a>
           </li>
-          <li>
+          <li className="list-group-item">
             <a href="/profile/cart" className="nav-link link-dark" id="cart">
               <i
                 className="fa fa-shopping-cart sidebar-icon"
@@ -151,7 +96,7 @@ function SideBar(props) {
               Cart
             </a>
           </li>
-          <li>
+          <li className="list-group-item">
             <a
               href="/profile/customers"
               className="nav-link link-dark"

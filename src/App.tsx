@@ -14,6 +14,7 @@ import AboutPage from "./pages/about/about";
 import ProductPage from "./pages/product/product.page";
 import SellPage from "./pages/sell/sell";
 import ProfilePage from "./pages/profile/profile";
+import withSplashScreen from "./components/splashScreen/splashScreenComponent";
 
 const App: React.FunctionComponent = () => {
   return (
@@ -49,4 +50,4 @@ const App: React.FunctionComponent = () => {
   );
 };
 
-export default App;
+export default withSplashScreen(App);
