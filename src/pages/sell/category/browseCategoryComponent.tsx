@@ -1,7 +1,11 @@
 import * as React from "react";
 import { CategoryModel } from "../../../models/category.model";
 
-const BrowseCategoryComponent: React.FC = () => {
+type BrowseCategoryProps = {
+  onSelectCategory: (category: CategoryModel) => void;
+};
+
+const BrowseCategoryComponent: React.FC<BrowseCategoryProps> = (props) => {
   const categories: CategoryModel[] = [
     new CategoryModel("1", "Shoes", "Shoes", 250),
   ];
@@ -16,17 +20,21 @@ const BrowseCategoryComponent: React.FC = () => {
             before listing. Click a top level category and you'll be shown all
             the available subcategories to choose from.
           </div>
-          <div className="list-group py-4 flex-row flex-wrap">
+          <div className="list-group py-4 d-flex flex-row flex-wrap">
             {categories.map((category) => {
               return (
                 <li
-                  className="list-group-item col-sm-12 col-md-4"
+                  className="list-group-item flex-row col-xs-12 col-sm-12 col-md-4"
                   id={category.id}
                   key={category.id}
+                  onClick={() => {
+                    console.log("Selected: " + category.id);
+                    props.onSelectCategory(category);
+                  }}
                 >
-                  <a href="/category" className="list-item-link">
+                  <div className="list-item-link">
                     {category.name} ({category.product_count})
-                  </a>
+                  </div>
                 </li>
               );
             })}

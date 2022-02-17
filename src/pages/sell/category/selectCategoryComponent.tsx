@@ -1,9 +1,14 @@
 import * as React from "react";
+import { CategoryModel } from "../../../models/category.model";
 import AddCategoryComponent from "./addCategoryComponent";
 import BrowseCategoryComponent from "./browseCategoryComponent";
 import SearchCategoryComponent from "./searchCategoryComponent";
 
-const SelectCategoryComponent: React.FC = () => {
+type SelectCategoryProps = {
+  onSelectCategory: (category: CategoryModel) => void;
+};
+
+const SelectCategoryComponent: React.FC<SelectCategoryProps> = (props) => {
   return (
     <div className="selectCategory">
       <ul className="nav nav-pills" id="pills-tab" role="tablist">
@@ -63,7 +68,9 @@ const SelectCategoryComponent: React.FC = () => {
           role="tabpanel"
           aria-labelledby="pills-browse-tab"
         >
-          <BrowseCategoryComponent></BrowseCategoryComponent>
+          <BrowseCategoryComponent
+            onSelectCategory={props.onSelectCategory}
+          ></BrowseCategoryComponent>
         </div>
         <div
           className="tab-pane fade"

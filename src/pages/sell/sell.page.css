@@ -5,12 +5,14 @@
 .sell-header > div > span {
   color: gray;
 }
-.sell-content > .tab-content {
+
+/* Select Category */
+.sell-content > .selectCategory > .tab-content {
   min-height: 350px;
   border: 1px solid #ddd;
 }
 
-.sell-content > .nav > .nav-item {
+.sell-content > .selectCategory > .nav > .nav-item {
   align-items: flex-start;
   justify-content: center;
   display: flex;
@@ -60,6 +62,7 @@
 
 .sell-content-body > .list-group > .list-group-item {
   padding: 0.5em;
+  cursor: pointer;
   height: 2.5em;
 }
 
@@ -75,6 +78,7 @@
   background-color: white;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 .list-item-link:hover {
@@ -86,6 +90,76 @@
 #searchProduct,
 #searchCode,
 #addCategory {
+  background-color: orangered;
+  border: orangered;
+}
+
+/* Add Category */
+.sell-content > .addProduct {
+  display: flex;
+}
+
+.sell-content > .addProduct > .container {
+  min-height: 500px;
+  border: 1px solid #ddd;
+}
+
+#addProductForm > .form-group:first-child {
+  display: flex;
+}
+
+#addProductForm > .form-group:first-child > span {
+  padding: 0px;
+  padding-left: 5px;
+}
+
+#addProductForm > .form-group > .category-label {
+  color: #aaa;
+  display: inline-block;
+  width: auto;
+}
+
+#addProductForm > .form-group > .category-name {
+  display: inline-block;
+  width: auto;
+  font-size: 20px;
+}
+#addProductForm > .mb-3 > .productImgDiv {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#addProductForm > .mb-3 > .productImgDiv > img {
+  background-color: #868e96;
+  height: 100%;
+  width: 100%;
+}
+
+.productImgsDiv > img {
+  height: 200px;
+  width: 200px;
+}
+
+#productMinPrice {
+  text-align: right;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#addProductSubmit {
   background-color: orangered;
   border: orangered;
 }

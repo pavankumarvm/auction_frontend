@@ -114,15 +114,21 @@ class Navigation extends React.Component {
               </ul>
               <div className="d-flex align-items-center">
                 <form className="d-flex flex-row my-2">
-                  <input
-                    className="form-control d-flex"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button className="btn btn-outline-success" type="submit">
-                    <i className="fa fa-search"></i>
-                  </button>
+                  <div className="input-group">
+                    <input
+                      className="form-control d-flex"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button
+                      className="btn btn-outline-success"
+                      id="navbarSearch"
+                      type="submit"
+                    >
+                      <i className="fa fa-search"></i>
+                    </button>
+                  </div>
                 </form>
               </div>
 

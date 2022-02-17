@@ -38,7 +38,7 @@
   visibility: visible;
 }
 
-.d-flex > .btn.btn-outline-success {
+#navbarSearch {
   background-color: white;
   border: 1px solid orange;
   color: orange;

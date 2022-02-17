@@ -9,6 +9,7 @@
   background-color: rgb(248, 249, 250);
   height: auto;
   min-height: 90vh;
+  padding-bottom: 2em;
 }
 .logo {
   font-family: Redressed, cursive;
