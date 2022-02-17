@@ -1,0 +1,49 @@
+.wishlist > .list-group > .list-group-item {
+  border-radius: 15px;
+}
+
+.wishlist-left > .wishlist-content > .wishlist-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wishlist-left > .wishlist-content > .wishlist-img > img {
+  width: 100%;
+}
+
+.wishlist-body > .wishlist-item-desc > p {
+  font-family: sans-serif;
+  font-size: 0.9em;
+}
+
+.wishlist-body > .wishlist-item-time > p > .ends_in {
+  color: grey;
+}
+
+.wishlist-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.wishlist-bookmark {
+  position: relative;
+  display: flex;
+  top: -1em;
+}
+
+.wishlist-bookmark > i {
+  font-size: 2em;
+  color: orangered;
+}
+
+.wishlist-item-time > p > .timer > .time-block {
+  font-size: 18px;
+}
+
+.wishlist-item-time > p > .timer > .time-block > .time-measure {
+  color: grey;
+  font-family: "Times New Roman", Times, serif;
+}
