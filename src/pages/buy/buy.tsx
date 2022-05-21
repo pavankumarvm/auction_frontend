@@ -34,7 +34,7 @@ class BuyPage extends React.Component {
           <div className="container d-flex align-items-center justify-content-center h-100">
             <div className="row align-items-center justify-content-center">
               <div
-                className="col-md-8 mx-auto text-center aos-init aos-animate"
+                className="col-md-12 mx-auto text-center aos-init aos-animate"
                 data-aos="fade-up"
               >
                 <h1 className="title">Buy.Sell.Bid</h1>

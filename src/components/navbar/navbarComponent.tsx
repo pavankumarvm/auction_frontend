@@ -57,16 +57,6 @@ class Navigation extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item px-2">
-                  <a className="nav-link" href="/about" id="about">
-                    About
-                  </a>
-                </li>
-                <li className="nav-item px-2">
-                  <a className="nav-link" href="/contact" id="contact">
-                    Contact
-                  </a>
-                </li>
-                <li className="nav-item px-2">
                   <a className="nav-link" href="/buy" id="buy">
                     Buy
                   </a>
@@ -110,6 +100,16 @@ class Navigation extends React.Component {
                       </a>
                     </li>
                   </ul>
+                </li>
+                <li className="nav-item px-2">
+                  <a className="nav-link" href="/about" id="about">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item px-2">
+                  <a className="nav-link" href="/contact" id="contact">
+                    Contact
+                  </a>
                 </li>
               </ul>
               <div className="d-flex align-items-center">
