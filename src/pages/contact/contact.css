@@ -1,0 +1,14 @@
+.contact .form-group label {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.contact .form-control {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  box-shadow: 3px 3px 3px gray;
+}
+.contact .a_btn {
+  width: 350px;
+}

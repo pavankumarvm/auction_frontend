@@ -23,7 +23,7 @@ function AboutUs() {
             </div>
             <div className="d-flex feature-icon mb-3">
               <span className="col-md-3 wrap-icon">
-                <i className="fa fa-paper-plane"></i>
+                <i className="fa fa-paper-plane-o"></i>
               </span>
               <div className="col-md-9">
                 <h3>Fast Support</h3>
@@ -35,7 +35,7 @@ function AboutUs() {
             </div>
             <div className="d-flex feature-icon mb-3">
               <span className="col-md-3 wrap-icon">
-                <i className="fa fa-smile"></i>
+                <i className="fa fa-smile-o"></i>
               </span>
               <div className="col-md-9">
                 <h3>Happy Customers</h3>
@@ -47,7 +47,7 @@ function AboutUs() {
             </div>
             <div className="d-flex feature-icon mb-3">
               <span className="col-md-3 wrap-icon">
-                <i className="fa fa-clock"></i>
+                <i className="fa fa-clock-o"></i>
               </span>
               <div className="col-md-9">
                 <h3>24/7 Support</h3>
