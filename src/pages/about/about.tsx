@@ -11,20 +11,17 @@ class AboutPage extends React.Component {
           className="intro-section"
           style={{ backgroundImage: "url(" + hero + ")" }}
         >
-          <div className="container">
+          <div className="container d-flex align-items-center justify-content-center h-100">
             <div className="row align-items-center justify-content-center">
               <div
-                className="col-md-7 mx-auto text-center aos-init aos-animate"
+                className="col-md-8 mx-auto text-center aos-init aos-animate"
                 data-aos="fade-up"
               >
-                <h1>About Us</h1>
+                <h1 className="title">About Us</h1>
+                <p className="desc">Virtual Auction and it's Benefits.</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
-                  nihil.
-                </p>
-                <p>
-                  <a href="/" className="btn btn-primary">
-                    Explore Now
+                  <a href="/login" className="btn btn-primary a_btn">
+                    Login
                   </a>
                 </p>
               </div>

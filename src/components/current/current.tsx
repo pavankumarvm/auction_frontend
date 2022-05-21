@@ -25,7 +25,7 @@ class Current extends Component {
   // @override
   render() {
     return (
-      <div className="site-section">
+      <div className="current site-section">
         <div className="container">
           <div className="row mb-4">
             <div className="col-md-7 mb-5 text-center mx-auto">

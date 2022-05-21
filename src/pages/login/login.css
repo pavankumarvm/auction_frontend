@@ -1,0 +1,15 @@
+.login .form-group label {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.login .form-control {
+  padding: 10px 15px;
+  width: 350px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  box-shadow: 3px 3px 3px gray;
+}
+.login .a_btn {
+  width: 350px;
+}

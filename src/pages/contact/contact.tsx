@@ -118,7 +118,7 @@ class ContactPage extends React.Component {
             </div>
           </div>
         </div>
-        <Testimonials />
+        {/* <Testimonials /> */}
       </div>
     );
   }

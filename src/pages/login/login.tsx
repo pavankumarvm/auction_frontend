@@ -29,47 +29,31 @@ class LoginPage extends React.Component {
           className="intro-section"
           style={{ backgroundImage: "url(" + hero + ")" }}
         >
-          <div className="container">
+          <div className="container d-flex align-items-center justify-content-center h-100">
             <div className="row align-items-center justify-content-center">
-              <div
-                className="col-md-7 mx-auto text-center aos-init aos-animate"
+              <form
+                className="col-md-12 mx-auto text-white text-left aos-init aos-animate"
                 data-aos="fade-up"
               >
-                <h1>Login</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
-                  nihil.
-                </p>
-                <p>
-                  <a href="/" className="btn btn-primary">
-                    Explore Now
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="site-section">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-5">
-                <h2 className="mb-5 text-black">
-                  <strong>Log In</strong>
-                </h2>
-                <div className="row">
+                <h1>Log In</h1>
+                <div className="row mb-2">
                   <div className="col-md-12 form-group">
                     <label htmlFor="useremail">Username</label>
                     <input
-                      type="email"
+                      type="text"
                       id="useremail"
                       name="username"
                       value={this.state.username}
-                      onChange={(text) => this.setState({ username: text })}
-                      className="form-control form-control-lg"
+                      onChange={(text) =>
+                        this.setState({ username: text.currentTarget.value })
+                      }
+                      className="form-control"
+                      required
+                      aria-required
                     />
                   </div>
                 </div>
-                <div className="row">
+                <div className="row mb-4">
                   <div className="col-md-12 form-group">
                     <label htmlFor="passlogin">Password</label>
                     <input
@@ -77,26 +61,36 @@ class LoginPage extends React.Component {
                       id="passlogin"
                       name="password"
                       value={this.state.password}
-                      onChange={(text) => this.setState({ password: text })}
-                      className="form-control form-control-lg"
+                      onChange={(text) =>
+                        this.setState({ password: text.currentTarget.value })
+                      }
+                      className="form-control"
+                      aria-required
+                      required
                     />
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-12">
+                  <div className="col-md-12">
                     <button
                       type="submit"
-                      value="Login"
-                      className="btn btn-primary btn-lg px-5"
+                      className="btn btn-primary a_btn"
                       onClick={this.loginUser}
-                    ></button>
+                    >
+                      Login
+                    </button>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
-        <Testimonials />
+        <div className="site-section">
+          <div className="container">
+            <div className="row justify-content-center"></div>
+          </div>
+        </div>
+        {/* <Testimonials /> */}
       </div>
     );
   }

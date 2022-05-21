@@ -31,20 +31,20 @@ class BuyPage extends React.Component {
           className="intro-section"
           style={{ backgroundImage: "url(" + hero + ")" }}
         >
-          <div className="container">
+          <div className="container d-flex align-items-center justify-content-center h-100">
             <div className="row align-items-center justify-content-center">
               <div
-                className="col-md-7 mx-auto text-center aos-init aos-animate"
+                className="col-md-8 mx-auto text-center aos-init aos-animate"
                 data-aos="fade-up"
               >
-                <h1>Buy, Sell, Bid</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
-                  nihil.
+                <h1 className="title">Buy.Sell.Bid</h1>
+                <p className="desc">
+                  Auction products which you can buy through auctions by bidding
+                  for it.
                 </p>
                 <p>
-                  <a href="/" className="btn btn-primary">
-                    Register
+                  <a href="/login" className="btn btn-primary a_btn">
+                    Login
                   </a>
                 </p>
               </div>

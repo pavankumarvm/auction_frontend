@@ -1,102 +1,70 @@
-import logo from "../../images/auction_logo.webp";
+import "./footer.css";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-3">
+          <div className="col-md-6">
             <p className="mb-4">
-              <img
-                src={logo}
-                alt=""
-                className="img-fluid"
-                data-pagespeed-url-hash="3368299270"
-              />
+              <a className="navbar-brand" href="/">
+                Auction
+              </a>
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              nemo minima qui dolor, iusto iure.
+              The Best Place to bid for product and compete with other bidders
+              to win the product.
             </p>
             <p>
-              <a href="/">Learn More</a>
+              <a href="/about">Learn More</a>
             </p>
           </div>
-          <div className="col-lg-3">
-            <h3 className="footer-heading">
-              <span>Solutions</span>
-            </h3>
-            <ul className="list-unstyled">
-              <li>
-                <a href="/">Register</a>
-              </li>
-              <li>
-                <a href="/">Login</a>
-              </li>
-              <li>
-                <a href="/">Buy</a>
-              </li>
-              <li>
-                <a href="/">Sell</a>
-              </li>
-              <li>
-                <a href="/">Submit a bid</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-lg-3">
+          <div className="col-md-3">
             <h3 className="footer-heading">
               <span>Services</span>
             </h3>
             <ul className="list-unstyled">
               <li>
-                <a href="/">Register</a>
+                <a href="/register">Register</a>
               </li>
               <li>
-                <a href="/">Login</a>
+                <a href="/login">Login</a>
               </li>
               <li>
-                <a href="/">Buy</a>
+                <a href="/buy">Buy</a>
               </li>
               <li>
-                <a href="/">Sell</a>
+                <a href="/sell">Sell</a>
               </li>
               <li>
-                <a href="/">Submit a bid</a>
+                <a href="/buy">Submit a bid</a>
               </li>
             </ul>
           </div>
-          <div className="col-lg-3">
+          <div className="col-md-3">
             <h3 className="footer-heading">
               <span>Contact</span>
             </h3>
             <ul className="list-unstyled">
               <li>
-                <a href="/">Help Center</a>
+                <a href="/contact">Help Center</a>
               </li>
               <li>
-                <a href="/">Support Community</a>
+                <a href="/support">Support Community</a>
               </li>
               <li>
-                <a href="/">Press</a>
+                <a href="/blog">Share Your Story</a>
               </li>
               <li>
-                <a href="/">Share Your Story</a>
-              </li>
-              <li>
-                <a href="/">Our Supporters</a>
+                <a href="/testimonials">Our Supporters</a>
               </li>
             </ul>
           </div>
         </div>
         <div className="row">
-          <div className="col-12">
+          <div className="col-md-12">
             <div className="copyright">
-              <p>
-                Copyright ©
-                <script>document.write(new Date().getFullYear());</script>2021
-                All rights reserved
-              </p>
+              <p>Copyright ©2022 All rights reserved|This project for BE</p>
             </div>
           </div>
         </div>

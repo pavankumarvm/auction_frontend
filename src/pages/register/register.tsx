@@ -2,6 +2,7 @@ import hero from "../../images/hero.webp";
 import * as React from "react";
 import Testimonials from "../../components/testimonials/testimonials";
 import Footer from "../../components/footer/footer";
+import "./register.css";
 
 class RegisterPage extends React.Component {
   render() {
@@ -11,78 +12,117 @@ class RegisterPage extends React.Component {
           className="intro-section"
           style={{ backgroundImage: "url(" + hero + ")" }}
         >
-          <div className="container">
-            <div className="row align-items-center justify-content-center">
+          <form className="container d-flex align-items-center justify-content-center h-100">
+            <div className="row mb-2 align-items-center justify-content-center">
               <div
-                className="col-md-7 mx-auto text-center aos-init aos-animate"
+                className="col-md-12 mx-auto text-left text-white aos-init aos-animate"
                 data-aos="fade-up"
               >
                 <h1>Register</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
-                  nihil.
-                </p>
-                <p>
-                  <a href="/" className="btn btn-primary">
-                    Explore Now
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="site-section">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-5">
-                <h2 className="mb-5 text-black">
-                  <strong>Register</strong>
-                </h2>
-                <div className="row">
-                  <div className="col-md-12 form-group">
-                    <label htmlFor="femail">Username/Email</label>
+                <div className="row mb-2">
+                  <div className="col-md-6 form-group">
+                    <label htmlFor="username">Username</label>
+                    <input
+                      type="text"
+                      id="username"
+                      className="form-control"
+                      required
+                      aria-required
+                    />
+                  </div>
+                  <div className="col-md-6 form-group">
+                    <label htmlFor="email">Email</label>
                     <input
                       type="email"
-                      id="femail"
-                      className="form-control form-control-lg"
+                      id="email"
+                      className="form-control"
+                      required
+                      aria-required
                     />
                   </div>
                 </div>
-                <div className="row">
-                  <div className="col-md-12 form-group">
-                    <label htmlFor="fpass">Password</label>
+                <div className="row mb-2">
+                  <div className="col-md-6 form-group">
+                    <label htmlFor="first_name">First Name</label>
+                    <input
+                      type="text"
+                      id="first_name"
+                      className="form-control"
+                      required
+                      aria-required
+                    />
+                  </div>
+                  <div className="col-md-6 form-group">
+                    <label htmlFor="last_name">Last Name</label>
+                    <input
+                      type="text"
+                      id="last_name"
+                      className="form-control"
+                      required
+                      aria-required
+                    />
+                  </div>
+                </div>
+                <div className="row mb-2">
+                  <div className="col-md-6 form-group">
+                    <label htmlFor="phone_no">Phone Number</label>
+                    <input
+                      type="text"
+                      pattern="^[0-9]"
+                      id="phone_no"
+                      className="form-control"
+                      required
+                      aria-required
+                    />
+                  </div>
+                  <div className="col-md-6 form-group">
+                    <label htmlFor="image">Your Profile Image</label>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      id="image"
+                      className="form-control"
+                      required
+                      aria-required
+                    />
+                  </div>
+                </div>
+                <div className="row mb-4">
+                  <div className="col-md-6 form-group">
+                    <label htmlFor="pass">Password</label>
                     <input
                       type="password"
-                      id="fpass"
-                      className="form-control form-control-lg"
+                      id="pass"
+                      className="form-control"
+                      required
+                      aria-required
                     />
                   </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-12 form-group">
-                    <label htmlFor="fpass2">Re-type Password</label>
+                  <div className="col-md-6 form-group">
+                    <label htmlFor="pass2">Re-type Password</label>
                     <input
                       type="password"
-                      id="fpass2"
-                      className="form-control form-control-lg"
+                      id="pass2"
+                      className="form-control"
+                      required
+                      aria-required
                     />
                   </div>
                 </div>
-                <div className="row">
-                  <div className="col-12">
+                <div className="row mb-2">
+                  <div className="col-md-6">
                     <input
                       type="submit"
                       value="Register"
-                      className="btn btn-primary btn-lg px-5"
+                      className="btn btn-primary a_btn"
                     />
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
-        <Testimonials />
-        <Footer />
+        {/* <Testimonials /> */}
       </div>
     );
   }

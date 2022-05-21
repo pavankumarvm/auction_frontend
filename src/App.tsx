@@ -8,15 +8,21 @@ import HomePage from "./pages/home/home";
 import BuyPage from "./pages/buy/buy";
 import LoginPage from "./pages/login/login";
 import RegisterPage from "./pages/register/register";
-// import Footer from "./components/footer/footer";
+import Footer from "./components/footer/footer";
 import ContactPage from "./pages/contact/contact";
 import AboutPage from "./pages/about/about";
 import ProductPage from "./pages/product/product.page";
 import SellPage from "./pages/sell/sell.page";
 import ProfilePage from "./pages/profile/profile";
 import withSplashScreen from "./components/splashScreen/splashScreenComponent";
+import Aos from 'aos';
+import $ from 'jquery';
 
 const App: React.FunctionComponent = () => {
+  $(window).on('load', function() {
+      Aos.refresh();
+  });
+  Aos.init();
   return (
     <Router>
       <Navigation />
@@ -45,9 +51,10 @@ const App: React.FunctionComponent = () => {
           }
         />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 };
 
-export default withSplashScreen(App);
+// export default withSplashScreen(App);
+export default App;
