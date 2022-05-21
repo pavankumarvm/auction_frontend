@@ -13,3 +13,6 @@
 .login .a_btn {
   width: 350px;
 }
+.login h1 {
+  font-size: 45px !important;
+}

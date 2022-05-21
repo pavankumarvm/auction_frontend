@@ -29,13 +29,13 @@ class LoginPage extends React.Component {
           className="intro-section"
           style={{ backgroundImage: "url(" + hero + ")" }}
         >
-          <div className="container d-flex align-items-center justify-content-center h-100">
+          <div className="container d-flex align-items-center justify-content-center">
             <div className="row align-items-center justify-content-center">
               <form
                 className="col-md-12 mx-auto text-white text-left aos-init aos-animate"
                 data-aos="fade-up"
               >
-                <h1>Log In</h1>
+                <h1 className="title">Log In</h1>
                 <div className="row mb-2">
                   <div className="col-md-12 form-group">
                     <label htmlFor="useremail">Username</label>
@@ -85,12 +85,7 @@ class LoginPage extends React.Component {
             </div>
           </div>
         </div>
-        <div className="site-section">
-          <div className="container">
-            <div className="row justify-content-center"></div>
-          </div>
-        </div>
-        {/* <Testimonials /> */}
+        <Testimonials />
       </div>
     );
   }
